@@ -4,7 +4,7 @@ WORKDIR /usr/src/librarygenesis
 
 # download LG repo
 RUN wget -O librarygenesis.zip "https://github.com/hype-armor/LibraryGenesis/archive/refs/heads/main.zip";
-COPY librarygenesis.zip /usr/src/librarygenesis/librarygenesis.zip
+#COPY librarygenesis.zip /usr/src/librarygenesis/librarygenesis.zip
 RUN unzip librarygenesis.zip;
 RUN rm librarygenesis.zip;
 RUN cd LibraryGenesis-main;
